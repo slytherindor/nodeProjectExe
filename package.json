@@ -1,0 +1,22 @@
+{
+  "name": "jsexecutableproject",
+  "version": "0.0.1",
+  "description": "Playing to see how does nexe work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check-types": "tsc --noemit",
+    "eslint": "eslint",
+    "lint": "npm run eslint && npm run check-types"
+  },
+  "author": "Shubhanshu Aarsay",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
