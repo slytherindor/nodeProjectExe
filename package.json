@@ -6,14 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check-types": "tsc --noemit",
-    "eslint": "eslint",
-    "lint": "npm run eslint && npm run check-types"
+    "eslint": "eslint ./src/**  --ext .ts",
+    "lint": "npm run eslint && npm run check-types",
+    "build": "npm run lint && tsc -b"
   },
   "author": "Shubhanshu Aarsay",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@types/lodash": "^4.14.150",
     "@types/node": "^13.13.4",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
     "eslint": "^6.8.0",
+    "nexe": "^3.3.2",
     "typescript": "^3.8.3"
   },
   "dependencies": {
